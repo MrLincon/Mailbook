@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "639196039253",
+    "project_id": "mailbook-f06ac",
+    "storage_bucket": "mailbook-f06ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639196039253:android:aa58b7544ad8c7748c2cdc",
+        "android_client_info": {
+          "package_name": "com.whitespace.mailbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639196039253-71s2shn3di97g6knt9t2m7lgb1hq27sv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.whitespace.mailbook",
+            "certificate_hash": "e114ebae66484edce3bd53dbb70a574ab693d49a"
+          }
+        },
+        {
+          "client_id": "639196039253-akf2gpbu725sikh05h6r9kjvcgje0okm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj7lcEItEdfbp8mxZMw7NbjcGTM4PoRCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639196039253-akf2gpbu725sikh05h6r9kjvcgje0okm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Activity.MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="empty.json"
+        app:lottie_loop="true"></com.airbnb.lottie.LottieAnimationView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginRight="28dp"
+        android:clipToPadding="false"
+        android:paddingBottom="96dp"></androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/toolbar_bg"
+            android:fontFamily="@font/ubuntu_medium"
+            android:gravity="center"
+            android:text="Mailbook"
+            android:textColor="@color/colorText"
+            android:textSize="22sp"></TextView>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:scrollbars="none">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="28dp"
+                android:paddingRight="28dp"
+                app:checkedChip="@id/chip_all"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_all"
+                    style="@style/ChipStyleChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="All" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_default"
+                    style="@style/ChipStyleChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Default" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_friend"
+                    style="@style/ChipStyleChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Friends" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_family"
+                    style="@style/ChipStyleChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Family" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_work"
+                    style="@style/ChipStyleChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Work" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="28dp"
+            android:background="@color/colorView"></View>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/bottom_nav_bg"
+        app:itemIconTint="@color/bottom_nav_selector"
+        app:itemRippleColor="@color/colorAccent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_nav" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="28dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/colorAccent"
+        app:fabCustomSize="65dp"
+        app:rippleColor="@color/colorBlack"
+        app:tint="@color/colorWhite"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

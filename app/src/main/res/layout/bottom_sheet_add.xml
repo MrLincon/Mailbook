@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="Create New"
+            android:textColor="@color/colorText"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+        <LinearLayout
+            android:id="@+id/first_expand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:scrollbars="none">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/categories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:checkedChip="@id/chip_default"
+                        app:singleSelection="true"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_default"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Default" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_friend"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Friends" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_family"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Family" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_work"
+                            style="@style/ChipStyleChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Work" />
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:text="Name"
+                    android:textColor="@color/colorText"
+                    android:textSize="16sp"></TextView>
+
+                <EditText
+                    android:id="@+id/add_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:backgroundTint="@color/colorText"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:hint="Name"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorTextSecondary"
+                    android:textSize="14sp"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:text="E-mail"
+                    android:textColor="@color/colorText"
+                    android:textSize="16sp"></TextView>
+
+                <EditText
+                    android:id="@+id/add_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:backgroundTint="@color/colorText"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorTextSecondary"
+                    android:textSize="14sp"></EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/toolbar_bg"
+            android:backgroundTint="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first_expand">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="center"
+                android:text="Save"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"></TextView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
