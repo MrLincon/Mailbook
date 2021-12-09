@@ -8,7 +8,7 @@
 <img  src= "Asset/Snap(4).jpg" width= 200 height= 380> <img  src= "Asset/Snap (5).jpg" width= 200 height= 380> <img  src= "Asset/Snap (6).jpg" width= 200 height= 380> 
 
 ## About
-It Mailbook is an application simmilar to a phonebook. Here you can store your E-mail addresses. It uses cloud database and Google authentication.
+Mailbook is an application simmilar to a phonebook. Here you can store your E-mail addresses. It uses cloud database and Google authentication.
 
 ## Tools
 
