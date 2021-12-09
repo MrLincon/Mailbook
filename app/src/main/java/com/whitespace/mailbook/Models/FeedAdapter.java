@@ -61,7 +61,6 @@ public class FeedAdapter extends FirestorePagingAdapter<Feed, FeedAdapter.FeedHo
             Email = itemView.findViewById(R.id.email);
             Copy = itemView.findViewById(R.id.copy);
 
-
             mContext = itemView.getContext();
 
             itemView.setOnClickListener(new View.OnClickListener() {

@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/#Work/Android/Mailbook/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/#Work/Android/Mailbook/app/src/main/res/layout/activity_profile.xml" value="0.2" />
+        <entry key="..\:/#Work/Android/Mailbook/app/src/main/res/layout/bottom_sheet_add.xml" value="0.2" />
+        <entry key="..\:/#Work/Android/Mailbook/app/src/main/res/layout/bottom_sheet_edit.xml" value="0.2" />
+        <entry key="..\:/#Work/Android/Mailbook/app/src/main/res/layout/bottom_sheet_feed.xml" value="0.2" />
+        <entry key="..\:/#Work/Android/Mailbook/app/src/main/res/layout/delete_popup.xml" value="0.2" />
+        <entry key="..\:/#Work/Android/Mailbook/app/src/main/res/layout/my_card_popup.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
